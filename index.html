@@ -1,0 +1,2230 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset=utf8>
+  <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <style>
+    :root {
+      color-scheme: light;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px)
+    }
+
+    html {
+      scroll-padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font: 14px -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff;
+      color: #000
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    [hidden]:not([hidden=until-found i]) {
+      display: none !important
+    }
+  </style>
+</head>
+
+<body>
+  <title>GARUDA Menjiwai Pancasila</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Layout: sticky navy masthead, one section visible at a time, content column 1040px, cards only where an object needs setting off. */
+    :root {
+      --bg: #F7F3EB;
+      --surface: #FFFFFF;
+      --surface2: #FAF6EF;
+      --ink: #231F20;
+      --ink2: #554F47;
+      --line: #E2D7C3;
+      --head-bg: #1B2A4A;
+      --head-ink: #F7F3EB;
+      --head-dim: #E8C766;
+      --accent: #8B2626;
+      --accent-bg: #8B2626;
+      --accent-bg-hover: #671B1B;
+      --on-accent: #FFFFFF;
+      --gold: #C59B27;
+      --gold-soft: #F6ECCB;
+      --navy: #1B2A4A;
+      --ok: #166534;
+      --ok-bg: #DCFCE7;
+      --bad: #991B1B;
+      --bad-bg: #FEE2E2;
+      --sel-bg: #EEF2F8;
+      --f-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --f-body: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      Jadi file web dari cloud HTML meh tak rubah URL :root:not([data-theme="light"]) {
+        --bg: #0F1626;
+        --surface: #172036;
+        --surface2: #1B2742;
+        --ink: #EDE7DA;
+        --ink2: #B6AFA0;
+        --line: #2B3856;
+        --head-bg: #0A0F1C;
+        --head-ink: #EDE7DA;
+        --head-dim: #E0B84A;
+        --accent: #E58A84;
+        --accent-bg: #A83A3A;
+        --accent-bg-hover: #C04A4A;
+        --on-accent: #FFFFFF;
+        --gold: #E0B84A;
+        --gold-soft: #2D2A1A;
+        --navy: #E0B84A;
+        --ok: #86EFAC;
+        --ok-bg: #12301F;
+        --bad: #FCA5A5;
+        --bad-bg: #3A1717;
+        --sel-bg: #1E2C4B;
+        color-scheme: dark;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #0F1626;
+      --surface: #172036;
+      --surface2: #1B2742;
+      --ink: #EDE7DA;
+      --ink2: #B6AFA0;
+      --line: #2B3856;
+      --head-bg: #0A0F1C;
+      --head-ink: #EDE7DA;
+      --head-dim: #E0B84A;
+      --accent: #E58A84;
+      --accent-bg: #A83A3A;
+      --accent-bg-hover: #C04A4A;
+      --on-accent: #FFFFFF;
+      --gold: #E0B84A;
+      --gold-soft: #2D2A1A;
+      --navy: #E0B84A;
+      --ok: #86EFAC;
+      --ok-bg: #12301F;
+      --bad: #FCA5A5;
+      --bad-bg: #3A1717;
+      --sel-bg: #1E2C4B;
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--f-body);
+      font-size: 15px;
+      line-height: 1.65;
+      padding-left: max(16px, env(safe-area-inset-left, 0px));
+      padding-right: max(16px, env(safe-area-inset-right, 0px));
+      padding-block: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0 0 auto;
+      height: env(safe-area-inset-top, 0px);
+      z-index: 30;
+      background: var(--head-bg);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--f-display);
+      line-height: 1.2;
+      text-wrap: balance;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    button,
+    textarea,
+    input {
+      font: inherit;
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .wrap {
+      max-width: 1040px;
+      margin-inline: auto;
+    }
+
+    /* masthead */
+    .mast {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 20;
+      background: var(--head-bg);
+      color: var(--head-ink);
+      border-bottom: 3px solid var(--gold);
+      margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+      padding-left: max(16px, env(safe-area-inset-left, 0px));
+      padding-right: max(16px, env(safe-area-inset-right, 0px));
+    }
+
+    .mast-in {
+      max-width: 1040px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-block: 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+      margin-right: auto;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #1B2A4A;
+      display: grid;
+      place-items: center;
+      font-family: var(--f-display);
+      font-weight: 800;
+      font-size: 15px;
+      flex: none;
+    }
+
+    .brand b {
+      display: block;
+      font-family: var(--f-display);
+      font-size: 20px;
+      letter-spacing: .06em;
+      line-height: 1;
+    }
+
+    .brand span {
+      display: block;
+      font-size: 10.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--head-dim);
+      margin-top: 3px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 2px;
+      overflow-x: auto;
+      max-width: 100%;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav a {
+      white-space: nowrap;
+      text-decoration: none;
+      color: var(--head-ink);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    .nav a:hover {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .nav a[aria-current="page"] {
+      background: var(--gold);
+      color: #1B2A4A;
+    }
+
+    main {
+      max-width: 1040px;
+      margin-inline: auto;
+      padding-block: 28px 56px;
+    }
+
+    section[hidden] {
+      display: none !important;
+    }
+
+    .stack {
+      display: grid;
+      gap: 28px;
+    }
+
+    .page-head {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .page-head h2 {
+      font-size: clamp(26px, 4vw, 34px);
+      color: var(--ink);
+    }
+
+    .page-head p {
+      color: var(--ink2);
+      max-width: 68ch;
+    }
+
+    /* hero */
+    .hero {
+      background: var(--head-bg);
+      color: var(--head-ink);
+      border-bottom: 4px solid var(--gold);
+      border-radius: 14px;
+      padding: clamp(24px, 5vw, 48px);
+      display: grid;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      bottom: -80px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 36px solid rgba(197, 155, 39, .14);
+      pointer-events: none;
+    }
+
+    .logo-img {
+      background-color: #fff;
+      background-image: url(data:image/jpeg;base64,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);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-origin: content-box;
+    }
+
+    .brand-mark.logo-img {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      padding: 3px;
+    }
+
+    .hero-logo {
+      width: clamp(68px, 11vw, 100px);
+      aspect-ratio: 431 / 464;
+      border-radius: 10px;
+      padding: 6px;
+      justify-self: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lvl {
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      background: var(--surface);
+      display: grid;
+      gap: 8px;
+      align-content: start;
+      min-width: 0;
+    }
+
+    .lvl .k {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .lvl h4 {
+      font-size: 19px;
+    }
+
+    .lvl p,
+    .lvl li {
+      font-size: 14px;
+      color: var(--ink2);
+    }
+
+    .lvl.mine {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px var(--gold-soft);
+    }
+
+    .lvl .badge {
+      display: none;
+      justify-self: start;
+      background: var(--gold);
+      color: #1B2A4A;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 99px;
+    }
+
+    .lvl.mine .badge {
+      display: inline-block;
+    }
+
+    .dq {
+      display: grid;
+      gap: 14px;
+    }
+
+    .dq fieldset {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 0;
+      min-width: 0;
+      display: grid;
+      gap: 8px;
+      background: var(--surface);
+    }
+
+    .dq legend {
+      font-weight: 600;
+      font-size: 14px;
+      padding: 0 6px;
+    }
+
+    .dq label {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .dq input {
+      margin-top: 5px;
+      accent-color: var(--accent-bg);
+    }
+
+    .hero .method {
+      justify-self: start;
+      background: var(--gold);
+      color: #1B2A4A;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 5px 14px;
+      border-radius: 99px;
+      max-width: 100%;
+    }
+
+    .hero .tag {
+      justify-self: start;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--head-dim);
+      border: 1px solid rgba(232, 199, 102, .4);
+      padding: 4px 12px;
+      border-radius: 99px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5.4vw, 52px);
+      font-weight: 800;
+      max-width: 18ch;
+    }
+
+    .hero p {
+      max-width: 58ch;
+      opacity: .92;
+    }
+
+    .hero .school {
+      font-size: 13px;
+      color: var(--head-dim);
+      font-weight: 600;
+    }
+
+    .pemantik {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-size: clamp(18px, 2.6vw, 24px);
+      color: var(--head-dim);
+      max-width: 34ch;
+    }
+
+    .btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #1B2A4A;
+    }
+
+    .btn-gold:hover {
+      filter: brightness(1.08);
+    }
+
+    .btn-red {
+      background: var(--accent-bg);
+      color: var(--on-accent);
+    }
+
+    .btn-red:hover {
+      background: var(--accent-bg-hover);
+    }
+
+    .btn-line {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .btn-line:hover {
+      background: var(--surface2);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border-color: rgba(255, 255, 255, .35);
+      color: var(--head-ink);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .btn[disabled] {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 16px;
+    }
+
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px;
+      display: grid;
+      gap: 8px;
+      align-content: start;
+      min-width: 0;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      color: var(--ink);
+    }
+
+    .card p,
+    .card li {
+      color: var(--ink2);
+      font-size: 14px;
+    }
+
+    .card.link {
+      text-decoration: none;
+      color: inherit;
+      transition: transform .15s, border-color .15s;
+    }
+
+    .card.link:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold);
+    }
+
+    .card .k {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .plain {
+      background: var(--surface2);
+      border-radius: 10px;
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      min-width: 0;
+    }
+
+    .plain h4 {
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .plain p,
+    .plain li {
+      font-size: 14px;
+      color: var(--ink2);
+    }
+
+    ul.t,
+    ol.t {
+      margin: 0;
+      padding-left: 20px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      gap: 14px;
+      counter-reset: s;
+    }
+
+    .steps>div {
+      border-top: 3px solid var(--gold);
+      padding-top: 12px;
+      counter-increment: s;
+    }
+
+    .steps .n {
+      font-family: var(--f-display);
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .steps h4 {
+      font-size: 18px;
+      margin: 4px 0 4px;
+    }
+
+    .steps p {
+      font-size: 14px;
+      color: var(--ink2);
+    }
+
+    .sec-title {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    /* tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-weight: 600;
+      font-size: 13.5px;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      border-color: var(--gold);
+    }
+
+    .tab[aria-selected="true"] {
+      background: var(--accent-bg);
+      border-color: var(--accent-bg);
+      color: var(--on-accent);
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: clamp(18px, 3.5vw, 32px);
+      display: grid;
+      gap: 18px;
+      min-width: 0;
+    }
+
+    .panel h3 {
+      font-size: 26px;
+      color: var(--accent);
+    }
+
+    .panel>p {
+      color: var(--ink2);
+      max-width: 70ch;
+    }
+
+    .def {
+      border-left: 4px solid var(--gold);
+      padding: 4px 0 4px 16px;
+      font-family: var(--f-display);
+      font-size: 19px;
+      line-height: 1.45;
+      max-width: 60ch;
+    }
+
+    .def small {
+      display: block;
+      font-family: var(--f-body);
+      font-size: 12.5px;
+      color: var(--ink2);
+      margin-top: 6px;
+    }
+
+    .chip {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 99px;
+      background: var(--gold-soft);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    .sila {
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 16px;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .sila:first-of-type {
+      border-top: 0;
+    }
+
+    .sila .no {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--head-bg);
+      color: var(--head-dim);
+      display: grid;
+      place-items: center;
+      font-family: var(--f-display);
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .sila h4 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .sila p {
+      color: var(--ink2);
+      font-size: 14.5px;
+      max-width: 68ch;
+    }
+
+    .sila .ex {
+      margin-top: 8px;
+      font-size: 13.5px;
+      background: var(--surface2);
+      border-radius: 8px;
+      padding: 10px 12px;
+      color: var(--ink2);
+    }
+
+    .sila .ex b {
+      color: var(--ink);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--ink2);
+    }
+
+    .scroll-x {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    /* keterkaitan */
+    .rel-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .rel-bar .tab {
+      min-width: 64px;
+      text-align: center;
+    }
+
+    .diagram {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 760px) {
+      .diagram {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    svg.map {
+      width: 100%;
+      max-width: 460px;
+      height: auto;
+      margin-inline: auto;
+      display: block;
+    }
+
+    .map .edge {
+      stroke: var(--line);
+      stroke-width: 3;
+      fill: none;
+      transition: stroke .2s, stroke-width .2s;
+    }
+
+    .map .edge.dash {
+      stroke-dasharray: 5 6;
+    }
+
+    .map .edge.on {
+      stroke: var(--gold);
+      stroke-width: 6;
+    }
+
+    .map .node circle {
+      fill: var(--head-bg);
+      stroke: var(--gold);
+      stroke-width: 2;
+      transition: fill .2s;
+    }
+
+    .map .node.on circle {
+      fill: var(--accent-bg);
+    }
+
+    .map .node text.num {
+      fill: var(--head-dim);
+      font-family: var(--f-display);
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .map .node.on text.num {
+      fill: #fff;
+    }
+
+    .map text.lab {
+      fill: var(--ink);
+      font-size: 12.5px;
+      font-weight: 600;
+      paint-order: stroke;
+      stroke: var(--surface);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }
+
+    .relbox {
+      min-height: 190px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .relbox h4 {
+      font-size: 21px;
+      color: var(--accent);
+    }
+
+    .relbox p {
+      color: var(--ink2);
+    }
+
+    /* kasus */
+    .case {
+      display: grid;
+      gap: 14px;
+    }
+
+    .quote {
+      background: var(--surface2);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 14px;
+      color: var(--ink2);
+    }
+
+    .checks {
+      display: grid;
+      gap: 8px;
+    }
+
+    .check {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      cursor: pointer;
+    }
+
+    .check input {
+      margin-top: 4px;
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent-bg);
+    }
+
+    .check span {
+      font-size: 14px;
+    }
+
+    .fb {
+      display: grid;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .fb>div {
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .fb .y {
+      border-color: var(--ok);
+      background: var(--ok-bg);
+    }
+
+    .fb .m {
+      border-color: var(--bad);
+      background: var(--bad-bg);
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      resize: vertical;
+      min-height: 110px;
+      font-size: 14px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      font-size: 14px;
+    }
+
+    label.f {
+      display: grid;
+      gap: 6px;
+      font-weight: 600;
+      font-size: 13.5px;
+    }
+
+    .rubric td:first-child {
+      font-weight: 600;
+      width: 38%;
+    }
+
+    /* kuis */
+    .q-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12.5px;
+      color: var(--ink2);
+      font-weight: 600;
+    }
+
+    .bar {
+      height: 8px;
+      border-radius: 99px;
+      background: var(--line);
+      overflow: hidden;
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--accent-bg);
+      transition: width .3s;
+    }
+
+    .qtext {
+      font-family: var(--f-display);
+      font-size: clamp(19px, 2.8vw, 24px);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .opts {
+      display: grid;
+      gap: 10px;
+    }
+
+    .opt {
+      display: grid;
+      grid-template-columns: 30px minmax(0, 1fr);
+      gap: 12px;
+      text-align: left;
+      align-items: center;
+      background: var(--surface);
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 11px 14px;
+      cursor: pointer;
+      font-size: 14.5px;
+    }
+
+    .opt:hover:not([disabled]) {
+      border-color: var(--navy);
+    }
+
+    .opt .l {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 12.5px;
+    }
+
+    .opt.correct {
+      border-color: var(--ok);
+      background: var(--ok-bg);
+    }
+
+    .opt.wrong {
+      border-color: var(--bad);
+      background: var(--bad-bg);
+    }
+
+    .opt[disabled] {
+      cursor: default;
+    }
+
+    .explain {
+      background: var(--gold-soft);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 14px;
+      border: 1px solid var(--line);
+    }
+
+    .score {
+      background: var(--head-bg);
+      color: var(--head-ink);
+      border-bottom: 4px solid var(--gold);
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .score .big {
+      font-family: var(--f-display);
+      font-weight: 800;
+      font-size: 52px;
+      color: var(--head-dim);
+      line-height: 1;
+    }
+
+    .score small {
+      display: block;
+      font-size: 12px;
+      opacity: .8;
+    }
+
+    .score .tier {
+      font-weight: 700;
+      font-size: 17px;
+      text-align: right;
+    }
+
+    details.rv {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: var(--surface);
+    }
+
+    details.rv summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    details.rv .in {
+      margin-top: 8px;
+      display: grid;
+      gap: 6px;
+      font-size: 13.5px;
+      color: var(--ink2);
+    }
+
+    .good {
+      color: var(--ok);
+    }
+
+    .badt {
+      color: var(--bad);
+    }
+
+    .key {
+      background: var(--gold-soft);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 13.5px;
+      margin-top: 8px;
+    }
+
+    .status {
+      font-size: 13px;
+      color: var(--ink2);
+      min-height: 1.4em;
+    }
+
+    footer {
+      border-top: 3px solid var(--gold);
+      background: var(--head-bg);
+      color: var(--head-ink);
+      margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+      padding: 22px max(16px, env(safe-area-inset-right, 0px)) calc(22px) max(16px, env(safe-area-inset-left, 0px));
+    }
+
+    footer .in {
+      max-width: 1040px;
+      margin-inline: auto;
+      display: grid;
+      gap: 4px;
+      font-size: 12.5px;
+    }
+
+    footer b {
+      font-family: var(--f-display);
+      color: var(--head-dim);
+      font-size: 17px;
+    }
+
+    footer span {
+      opacity: .75;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+      }
+
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+
+  <header class="mast">
+    <div class="mast-in">
+      <a class="brand" href="#beranda" aria-label="GARUDA, ke beranda">
+        <span class="brand-mark logo-img" aria-hidden="true"></span>
+        <div><b>GARUDA</b><span>Bab 1 · Menjiwai Pancasila</span></div>
+      </a>
+      <nav class="nav" aria-label="Menu utama" id="nav">
+        <a href="#beranda" data-r="beranda">Beranda</a>
+        <a href="#materi" data-r="materi">Materi</a>
+        <a href="#level" data-r="level">Belajar Sesuai Level</a>
+        <a href="#keterkaitan" data-r="keterkaitan">Peta Keterkaitan</a>
+        <a href="#kasus" data-r="kasus">Lab Kasus</a>
+        <a href="#kuis" data-r="kuis">Kuis</a>
+        <a href="#refleksi" data-r="refleksi">Refleksi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BERANDA -->
+    <section id="sec-beranda" class="stack">
+      <div class="hero">
+        <div class="hero-logo logo-img" role="img" aria-label="Lambang Garuda Pancasila"></div>
+        <span class="tag">Pendidikan Pancasila · Kelas XI · Bab 1</span>
+        <h1>Menjiwai Pancasila</h1>
+        <p class="pemantik">Bagaimana cara menjiwai Pancasila dalam kehidupan sehari-hari?</p>
+        <p>Ruang belajar digital untuk memahami keterkaitan lima sila, makna tiap sila, dan kedudukan Pancasila sebagai
+          ideologi negara, lalu mengamalkannya di sekolah dan di dunia maya.</p>
+        <p class="method">Dipadukan dengan Pembelajaran Sesuai Level + Pembelajaran Mendalam</p>
+        <p class="school">SMA Muhammadiyah 2 Surakarta</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="#materi">Mulai belajar</a>
+          <a class="btn btn-ghost" href="#kuis">Langsung ke kuis</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sec-title">Setelah bab ini, kamu mampu</h3>
+        <div class="grid2">
+          <div class="card"><span class="k">Tujuan 1</span>
+            <h3>Menganalisis rumusan dan keterkaitan sila-sila</h3>
+            <p>Menjelaskan mengapa lima sila tidak berdiri sendiri dan bagaimana satu sila menguatkan yang lain.</p>
+          </div>
+          <div class="card"><span class="k">Tujuan 2</span>
+            <h3>Menganalisis kedudukan Pancasila sebagai ideologi negara</h3>
+            <p>Memahami pengertian ideologi, alasan Pancasila dipilih, serta makna meja statis dan leitstar dinamis.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <a class="card link" href="#materi"><span class="k">Materi</span>
+          <h3>Lima topik inti</h3>
+          <p>Makna sila, Pancasila dalam tindakan, ideologi, ideologi negara, dan meja statis–leitstar.</p>
+        </a>
+        <a class="card link" href="#level"><span class="k">Pendekatan belajar</span>
+          <h3>Belajar Sesuai Level, Belajar Mendalam</h3>
+          <p>Cek level awalmu, lalu ikuti jalur belajar yang pas dengan cara belajar mendalam.</p>
+        </a>
+        <a class="card link" href="#keterkaitan"><span class="k">Interaktif</span>
+          <h3>Peta Keterkaitan</h3>
+          <p>Pilih pasangan sila dan lihat hubungannya pada diagram.</p>
+        </a>
+        <a class="card link" href="#kasus"><span class="k">Studi kasus</span>
+          <h3>Lab Kasus</h3>
+          <p>Pembakaran warung di Sukoharjo. Sila mana yang tersentuh dan apa tindakanmu?</p>
+        </a>
+        <a class="card link" href="#kuis"><span class="k">Asesmen</span>
+          <h3>Kuis 12 soal + 5 uraian</h3>
+          <p>Umpan balik langsung untuk tiap jawaban.</p>
+        </a>
+        <a class="card link" href="#refleksi"><span class="k">Diri sendiri</span>
+          <h3>Lembar Refleksi</h3>
+          <p>Tulis yang kamu pahami dan satu komitmen untuk minggu ini.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- MATERI -->
+    <section id="sec-materi" class="stack" hidden>
+      <div class="page-head">
+        <span class="eyebrow">Modul pembelajaran</span>
+        <h2>Materi Bab 1</h2>
+        <p>Pilih topik. Setiap topik bisa dibaca sendiri, tetapi urutan dari kiri ke kanan paling mudah diikuti.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Topik materi" id="mtabs">
+        <button class="tab" role="tab" data-m="sila" aria-selected="true">Makna lima sila</button>
+        <button class="tab" role="tab" data-m="tindakan" aria-selected="false">Pancasila dalam tindakan</button>
+        <button class="tab" role="tab" data-m="ideologi" aria-selected="false">Pengertian ideologi</button>
+        <button class="tab" role="tab" data-m="negara" aria-selected="false">Ideologi negara</button>
+        <button class="tab" role="tab" data-m="meja" aria-selected="false">Meja statis &amp; leitstar</button>
+      </div>
+
+      <div class="panel" id="m-sila">
+        <h3>Makna sila-sila dalam Pancasila</h3>
+        <p>Tiap sila punya makna yang bisa dijadikan pedoman hidup di sekolah, masyarakat, bangsa, dan negara. Urutan
+          lafalnya mengikuti Instruksi Presiden Nomor 12 Tahun 1968.</p>
+        <div>
+          <div class="sila">
+            <div class="no">1</div>
+            <div>
+              <h4>Ketuhanan Yang Maha Esa</h4>
+              <p>Indonesia berdiri di atas landasan moral yang luhur. Pasal 29 UUD 1945 menyatakan negara berdasar
+                Ketuhanan Yang Maha Esa dan menjamin kemerdekaan tiap penduduk memeluk agama serta beribadat menurut
+                agama dan kepercayaannya. Indonesia bukan negara agama dan bukan negara sekuler: nilai ketuhanan menjadi
+                roh kehidupan bermasyarakat, berbangsa, dan bernegara.</p>
+              <div class="ex"><b>Contoh:</b> menghormati teman yang beribadah, tidak mengejek keyakinan orang lain,
+                jujur saat ujian.</div>
+            </div>
+          </div>
+          <div class="sila">
+            <div class="no">2</div>
+            <div>
+              <h4>Kemanusiaan yang Adil dan Beradab</h4>
+              <p>Manusia adalah makhluk ciptaan Tuhan yang punya pikir, rasa, karsa, dan cipta. Adil berarti keputusan
+                dan tindakan didasarkan pada ukuran objektif, tidak sewenang-wenang. Beradab berarti hidup berbudaya dan
+                berpegang pada norma sosial serta kesusilaan. Semua manusia setara harkat dan martabatnya tanpa
+                membedakan agama, suku, ras, dan golongan.</p>
+              <div class="ex"><b>Contoh:</b> donor darah, tidak merundung, membela teman yang diperlakukan tidak adil.
+              </div>
+            </div>
+          </div>
+          <div class="sila">
+            <div class="no">3</div>
+            <div>
+              <h4>Persatuan Indonesia</h4>
+              <p>Persatuan berarti bersatunya aneka corak menjadi satu kebulatan, tidak terpecah-pecah. Persatuan
+                dibutuhkan agar cita-cita hidup adil dan makmur tercapai. Sila ini juga mengajarkan cinta tanah air:
+                mencintai ragam budaya dan tradisi, serta menjaga lingkungan alam untuk generasi mendatang.</p>
+              <div class="ex"><b>Contoh:</b> gotong royong membersihkan lingkungan, bangga memakai produk dan budaya
+                daerah, tidak memecah belah kelas karena perbedaan.</div>
+            </div>
+          </div>
+          <div class="sila">
+            <div class="no">4</div>
+            <div>
+              <h4>Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan</h4>
+              <p>Negara menganut demokrasi: pemerintahan dari rakyat, oleh rakyat, untuk rakyat. Menurut Mohammad Hatta,
+                demokrasi Indonesia berjalan di atas kebenaran, keadilan, kebaikan, kejujuran, kesucian, dan keindahan.
+                Demokrasi ini menjamin hak asasi, misalnya hak berserikat, berkumpul, dan mengeluarkan pikiran sesuai
+                Pasal 28 UUD NRI 1945.</p>
+              <div class="ex"><b>Contoh:</b> memilih ketua kelas lewat musyawarah, menerima hasil keputusan bersama,
+                menyampaikan kritik dengan santun.</div>
+            </div>
+          </div>
+          <div class="sila">
+            <div class="no">5</div>
+            <div>
+              <h4>Keadilan Sosial bagi Seluruh Rakyat Indonesia</h4>
+              <p>Sila ini bermakna kehidupan berbangsa dan bernegara diarahkan pada kehidupan yang adil dan makmur bagi
+                semua. Keadilan sosial menjadi dasar sekaligus tujuan, sebagaimana tertulis pada alinea keempat
+                Pembukaan UUD NRI 1945. Sukarno dalam pidato 1 Juni 1945 membayangkan Indonesia merdeka tanpa
+                kemiskinan.</p>
+              <div class="ex"><b>Contoh:</b> berbagi kesempatan bicara di kelompok, tidak memonopoli fasilitas sekolah,
+                ikut menggalang bantuan bagi yang membutuhkan.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="m-tindakan" hidden>
+        <h3>Pancasila dalam tindakan</h3>
+        <p>Pancasila tidak hanya dihafal. Ia hadir saat suporter mengibarkan Merah Putih dan menyanyikan lagu bertema
+          Garuda untuk mendukung tim nasional, di tribun sepak bola maupun bulu tangkis. Rasa bangga, optimisme,
+          patriotisme, dan nasionalisme itu adalah nilai Pancasila yang bergerak.</p>
+        <div class="grid2">
+          <div class="plain">
+            <h4>Pertanyaan yang diajukan buku</h4>
+            <p>Sejauh mana makna Pancasila meresap pada generasi muda di luar konteks dukungan untuk tim nasional?
+              Setiap generasi punya cara sendiri memaknai Pancasila, tetapi sejarah, cita-cita, dan tantangannya tetap
+              perlu dipahami.</p>
+          </div>
+          <div class="plain">
+            <h4>Perjanjian luhur</h4>
+            <p>Pancasila lahir dari musyawarah para pendiri bangsa dari beragam agama, etnis, dan suku. Karena itu
+              Pancasila disebut perjanjian luhur yang harus dihormati dan dijalankan.</p>
+          </div>
+        </div>
+        <div class="def">Sukarno menegaskan pada 24 September 1955 bahwa ia bukan pencipta Pancasila. Ia menggali nilai
+          itu dari bumi Indonesia lalu mempersembahkannya kembali.<small>Pidato di Kongres Rakyat Jawa Timur,
+            diringkas.</small></div>
+        <div class="plain">
+          <h4>Coba sendiri</h4>
+          <ul class="t">
+            <li>Dengarkan lagu nasional "Garuda Pancasila" dan lagu bertema Garuda lain yang kamu kenal. Apa persamaan
+              dan perbedaannya?</li>
+            <li>Mengapa suporter lebih sering menyanyikan lagu pop bertema Garuda daripada lagu nasional?</li>
+            <li>Sebutkan satu cara lain Pancasila hidup di luar olahraga.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" id="m-ideologi" hidden>
+        <h3>Pengertian dan ciri ideologi</h3>
+        <div class="def">Ideologi berasal dari bahasa Yunani: <i>ideos</i> (ide) dan <i>logos</i> (pengetahuan). Artinya
+          seperangkat pengetahuan, nilai, keyakinan, dan pandangan dunia yang menjadi landasan pikiran dan tindakan.
+        </div>
+        <div>
+          <h4 class="sec-title" style="font-size:19px">Tiga unsur ideologi (Koento Wibisono)</h4>
+          <div class="grid3">
+            <div class="plain">
+              <h4>Keyakinan</h4>
+              <p>Gagasan vital yang diyakini benar dan dijadikan dasar serta strategi mencapai tujuan.</p>
+            </div>
+            <div class="plain">
+              <h4>Mitos</h4>
+              <p>Ajaran yang dipercaya optimistis akan menjamin tercapainya tujuan lewat cara yang sudah ditentukan.</p>
+            </div>
+            <div class="plain">
+              <h4>Loyalitas</h4>
+              <p>Tuntutan keterlibatan optimal dari para pendukungnya.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="sec-title" style="font-size:19px">Enam ciri umum ideologi</h4>
+          <div class="grid3">
+            <div class="plain">
+              <h4>Berpandangan dunia</h4>
+              <p>Cara pandang terpadu tentang manusia, masyarakat, budaya, ekonomi, agama, dan kekuasaan.</p>
+            </div>
+            <div class="plain">
+              <h4>Memuat nilai dan tujuan</h4>
+              <p>Misalnya kebangsaan, kemanusiaan, keadilan, kebebasan, kesetaraan, keamanan.</p>
+            </div>
+            <div class="plain">
+              <h4>Memengaruhi kebijakan</h4>
+              <p>Bentuk pemerintahan, pembagian kekuasaan, distribusi kesejahteraan, pengelolaan sumber daya.</p>
+            </div>
+            <div class="plain">
+              <h4>Pemberi dan pembeda identitas</h4>
+              <p>Individu atau kelompok memaknai diri dan orang lain melalui ideologinya.</p>
+            </div>
+            <div class="plain">
+              <h4>Pendorong perubahan sosial</h4>
+              <p>Bisa menjadi landasan gerakan sosial atau politik.</p>
+            </div>
+            <div class="plain">
+              <h4>Adaptif dan kontekstual</h4>
+              <p>Mampu menjawab tantangan tanpa berubah menjadi sesuatu yang lain.</p>
+            </div>
+          </div>
+        </div>
+        <div class="plain">
+          <h4>Aktivitas</h4>
+          <p>Menurutmu, apakah Pancasila memenuhi pengertian dan keenam ciri di atas? Tulis analisismu untuk tiap ciri.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel" id="m-negara" hidden>
+        <h3>Pancasila sebagai ideologi negara</h3>
+        <p>Menurut Miriam Budiardjo, negara memiliki empat unsur penting:</p>
+        <div class="grid3">
+          <div class="plain">
+            <h4>Wilayah</h4>
+            <p>Memiliki batas yang jelas.</p>
+          </div>
+          <div class="plain">
+            <h4>Rakyat</h4>
+            <p>Orang yang mendiami wilayah itu.</p>
+          </div>
+          <div class="plain">
+            <h4>Pemerintah berdaulat</h4>
+            <p>Menjalankan wewenang mengatur warganya.</p>
+          </div>
+          <div class="plain">
+            <h4>Hubungan antarnegara</h4>
+            <p>Mampu berhubungan dengan negara berdaulat lain.</p>
+          </div>
+        </div>
+        <p>Wilayah yang luas dan penduduk yang beragam etnis, budaya, bahasa, agama, dan kepercayaan membuat Indonesia
+          membutuhkan ideologi untuk menjaga keberlangsungan dan mencapai tujuannya, yaitu masyarakat adil dan makmur.
+          Pancasila berkedudukan sebagai ideologi negara karena ia merupakan kepribadian bangsa. Nilai ketuhanan,
+          kemanusiaan, persatuan, musyawarah mufakat, dan keadilan sosial sudah tampak dalam budaya, ekonomi, kehidupan
+          sosial, dan spiritualitas masyarakat Nusantara sejak lama. Memakai ideologi lain berarti mengingkari
+          kepribadian, keberadaan, dan tujuan negara sendiri.</p>
+        <div class="grid2">
+          <div class="plain">
+            <h4>Indonesia 2045</h4>
+            <p>Visi "Berdaulat, Maju, Adil, dan Makmur" pada seabad kemerdekaan. Dipimpin generasi emas yang cerdas,
+              produktif, inovatif, berkarakter kuat, berjiwa gotong royong, dan membangun tanpa merusak alam.</p>
+          </div>
+          <div class="plain">
+            <h4>Impian Indonesia 2085</h4>
+            <ul class="t">
+              <li>SDM yang unggul di antara bangsa-bangsa.</li>
+              <li>Pusat pendidikan, teknologi, dan peradaban dunia.</li>
+              <li>Masyarakat dan aparatur bebas korupsi.</li>
+              <li>Infrastruktur merata di seluruh Indonesia.</li>
+              <li>Negara mandiri dan berpengaruh di Asia.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="plain">
+          <h4>Aktivitas</h4>
+          <p>Diskusikan ekspresi budaya, corak perekonomian, kehidupan sosial, dan spiritualitas di sekitarmu yang
+            mencerminkan nilai Pancasila. Siapkan alasannya untuk disampaikan di kelas.</p>
+        </div>
+      </div>
+
+      <div class="panel" id="m-meja" hidden>
+        <h3>Meja statis dan leitstar dinamis</h3>
+        <p>Dalam kursus tentang Pancasila, Sukarno menyebut Pancasila sebagai meja statis dan leitstar dinamis.
+          <i>Leitstar</i> berasal dari kata Jerman <i>leitstern</i>, "bintang penuntun".</p>
+        <div class="grid2">
+          <div class="plain">
+            <h4>Meja statis</h4>
+            <p>Titik yang mempertemukan dan mempersatukan keragaman bangsa serta mendasari ideologi dan norma negara.
+              Dasar itu tidak dicari ke mana pun selain ke dalam jiwa masyarakat sendiri, yaitu jati diri yang tidak
+              berubah.</p>
+          </div>
+          <div class="plain">
+            <h4>Leitstar dinamis</h4>
+            <p>Penuntun menuju cita-cita. Pancasila tidak kaku: ia menggerakkan bangsa menjawab tantangan zaman tanpa
+              meninggalkan prinsip dasar dan tujuannya.</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="sec-title" style="font-size:19px">Cita-cita tiap nilai</h4>
+          <div class="scroll-x">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nilai</th>
+                  <th>Masyarakat yang dicita-citakan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ketuhanan</td>
+                  <td>Religius, setara dalam kebebasan beribadah, hidup rukun dalam keragaman.</td>
+                </tr>
+                <tr>
+                  <td>Kemanusiaan</td>
+                  <td>Memperlakukan sesama secara adil dan beradab.</td>
+                </tr>
+                <tr>
+                  <td>Kebangsaan</td>
+                  <td>Bersatu, bergotong royong, mencintai tanah air.</td>
+                </tr>
+                <tr>
+                  <td>Kerakyatan</td>
+                  <td>Kedaulatan rakyat dengan asas permusyawaratan melalui lembaga perwakilan.</td>
+                </tr>
+                <tr>
+                  <td>Keadilan sosial</td>
+                  <td>Adil dan makmur.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="plain">
+          <h4>Berpikir kritis</h4>
+          <p>Nilai Pancasila apa yang menurutmu masih kurang terwujud saat ini? Apa yang perlu dilakukan agar lebih
+            terwujud?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL: TaRL + DEEP LEARNING -->
+    <section id="sec-level" class="stack" hidden>
+      <div class="page-head">
+        <span class="eyebrow">Pendekatan belajar</span>
+        <h2>Belajar Sesuai Level, Belajar Mendalam</h2>
+        <p>Bab ini memadukan TaRL (Teaching at the Right Level) dan Pembelajaran Mendalam (Deep Learning). Kamu mulai
+          dari level capaianmu sendiri, lalu belajar dengan sadar, bermakna, dan menyenangkan.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="k">Pembelajaran sesuai level</span>
+          <h3>Mengajar pada level yang tepat</h3>
+          <p>Belajar dimulai dari apa yang sudah kamu kuasai, bukan dari halaman buku atau kelas. Siswa dikelompokkan
+            menurut level capaian, mengerjakan aktivitas pendek yang langsung dipraktikkan, dan berpindah level saat
+            sudah siap.</p>
+          <ol class="t">
+            <li>Asesmen cepat untuk mengetahui level awal.</li>
+            <li>Kelompok menurut level, bukan menurut kelas.</li>
+            <li>Aktivitas sesuai level, singkat dan berbasis praktik.</li>
+            <li>Pantau kemajuan, lalu pindah level.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <span class="k">Pembelajaran mendalam</span>
+          <h3>Belajar sadar, bermakna, menyenangkan</h3>
+          <p>Pembelajaran mendalam menekankan pemahaman yang tahan lama dan terhubung dengan kehidupan nyata.</p>
+          <ul class="t">
+            <li><b>Berkesadaran:</b> hadir penuh dan sadar mengapa belajar ini penting.</li>
+            <li><b>Bermakna:</b> materi dihubungkan dengan isu nyata di sekitarmu.</li>
+            <li><b>Menggembirakan:</b> kuis, diskusi, peran, dan proyek kreatif.</li>
+          </ul>
+          <p>Tiga pengalaman belajarnya: <b>memahami</b>, <b>mengaplikasi</b>, <b>merefleksi</b>.</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Langkah 1. Cek level awalmu</h3>
+        <p>Enam soal singkat, tanpa nilai rapor. Tujuannya hanya menentukan jalur belajar yang paling pas untukmu.</p>
+        <form class="dq" id="dq"></form>
+        <div class="btns"><button class="btn btn-red" id="dgo" type="button">Lihat level saya</button><button
+            class="btn btn-line" id="dreset" type="button">Ulangi</button></div>
+        <p class="status" id="dstatus" aria-live="polite"></p>
+      </div>
+
+      <div>
+        <h3 class="sec-title">Langkah 2. Ikuti jalur levelmu</h3>
+        <div class="grid3" id="lvls">
+          <div class="lvl" data-l="1"><span class="badge">Levelmu</span><span class="k">Level 1</span>
+            <h4>Mengenal</h4>
+            <p><b>Fokus:</b> lafal sila, arti kata kunci, dan contoh sederhana.</p>
+            <ul class="t">
+              <li>Baca <a href="#materi">Makna lima sila</a>, tulis satu contoh nyata untuk tiap sila.</li>
+              <li>Kerjakan <a href="#kuis">kuis</a> dan baca penjelasan di setiap jawaban.</li>
+            </ul>
+            <p><b>Naik level bila</b> kamu bisa menjelaskan makna tiap sila dengan kata sendiri.</p>
+          </div>
+          <div class="lvl" data-l="2"><span class="badge">Levelmu</span><span class="k">Level 2</span>
+            <h4>Menghubungkan</h4>
+            <p><b>Fokus:</b> keterkaitan antarsila dan konsep ideologi.</p>
+            <ul class="t">
+              <li>Jelajahi <a href="#keterkaitan">Peta Keterkaitan</a>, cari 3–4 contoh untuk sila 1–4 dan 2–4.</li>
+              <li>Pelajari topik ideologi dan ideologi negara di <a href="#materi">Materi</a>.</li>
+            </ul>
+            <p><b>Naik level bila</b> kamu bisa menjelaskan mengapa sila tidak bisa dipisah, lengkap dengan contoh.</p>
+          </div>
+          <div class="lvl" data-l="3"><span class="badge">Levelmu</span><span class="k">Level 3</span>
+            <h4>Menganalisis dan merumuskan</h4>
+            <p><b>Fokus:</b> menganalisis kasus, berargumen, dan merancang solusi.</p>
+            <ul class="t">
+              <li>Selesaikan <a href="#kasus">Lab Kasus</a> dan rancang dua tindakan nyata.</li>
+              <li>Jawab soal uraian, lalu dampingi teman Level 1–2 saat kerja kelompok.</li>
+            </ul>
+            <p><b>Target lanjutan:</b> kampanye mini atau rencana aksi berbasis Pancasila.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Paduan TaRL dan Deep Learning di Bab 1</h3>
+        <div class="scroll-x">
+          <table>
+            <thead>
+              <tr>
+                <th>Tahap TaRL</th>
+                <th>Pengalaman Deep Learning</th>
+                <th>Wujud di bab ini</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Asesmen awal</td>
+                <td>Berkesadaran</td>
+                <td>Cek level di halaman ini. Tulis satu kata yang terlintas saat mendengar "Pancasila".</td>
+              </tr>
+              <tr>
+                <td>Kelompok menurut level</td>
+                <td>Memahami</td>
+                <td>Kelompok kecil membaca materi atau kasus yang sesuai levelnya, lalu mendiskusikan hakikat dan
+                  urgensi Pancasila.</td>
+              </tr>
+              <tr>
+                <td>Aktivitas sesuai level</td>
+                <td>Mengaplikasi (bermakna dan menggembirakan)</td>
+                <td>Level 1–2: peta konsep atau infografik, Pohon atau Jaring Pancasila. Level 3: rencana aksi, poster
+                  kampanye, debat mini.</td>
+              </tr>
+              <tr>
+                <td>Pantau dan pindah level</td>
+                <td>Merefleksi</td>
+                <td>Ulangi cek level di akhir bab, isi <a href="#refleksi">Lembar Refleksi</a>, tulis satu komitmen
+                  nyata.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sec-title">Dimensi profil lulusan yang dilatih</h3>
+        <div class="grid3">
+          <div class="plain">
+            <h4>Keimanan dan ketakwaan</h4>
+            <p>Menghubungkan sila pertama dengan kehidupan beragama dan toleransi.</p>
+          </div>
+          <div class="plain">
+            <h4>Kewargaan</h4>
+            <p>Bertanggung jawab sebagai warga negara yang aktif sesuai nilai Pancasila.</p>
+          </div>
+          <div class="plain">
+            <h4>Penalaran kritis</h4>
+            <p>Menganalisis isu terkini dengan kacamata Pancasila.</p>
+          </div>
+          <div class="plain">
+            <h4>Kolaborasi</h4>
+            <p>Bekerja sama merumuskan dan menjalankan solusi.</p>
+          </div>
+          <div class="plain">
+            <h4>Kemandirian</h4>
+            <p>Berinisiatif mengamalkan nilai Pancasila sehari-hari.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="plain">
+        <h4>Catatan untuk guru</h4>
+        <ul class="t">
+          <li>Kelompokkan siswa menurut level hasil cek, bukan menurut rombel. Tujuan belajar sama, kedalaman tugas
+            berbeda.</li>
+          <li>Beri tugas yang sama temanya tetapi bertingkat: mengenal, menghubungkan, menganalisis.</li>
+          <li>Ulangi cek level di akhir bab dan pindahkan siswa yang sudah naik level.</li>
+          <li>Soal cek level ini adalah alat diagnostik dan tidak dimaksudkan sebagai nilai.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KETERKAITAN -->
+    <section id="sec-keterkaitan" class="stack" hidden>
+      <div class="page-head">
+        <span class="eyebrow">Peta interaktif</span>
+        <h2>Keterkaitan antarsila</h2>
+        <p>Menurut Mohammad Hatta, kelima sila terkait erat dan tidak berdiri sendiri. Sila pertama menjiwai sila
+          lainnya. Pilih pasangan sila untuk melihat hubungannya.</p>
+      </div>
+      <div class="rel-bar" id="relbar" role="tablist" aria-label="Pasangan sila">
+        <button class="tab" role="tab" data-e="1-2" aria-selected="true">Sila 1 ↔ 2</button>
+        <button class="tab" role="tab" data-e="1-3" aria-selected="false">Sila 1 ↔ 3</button>
+        <button class="tab" role="tab" data-e="2-3" aria-selected="false">Sila 2 ↔ 3</button>
+        <button class="tab" role="tab" data-e="3-4" aria-selected="false">Sila 3 ↔ 4</button>
+        <button class="tab" role="tab" data-e="4-5" aria-selected="false">Sila 4 ↔ 5</button>
+      </div>
+      <div class="panel diagram">
+        <svg class="map" viewBox="0 0 440 340" role="img"
+          aria-label="Diagram lima sila. Sila 1 di tengah, sila 2 sampai 5 mengelilinginya.">
+          <line class="edge dash" data-e="1-4" x1="220" y1="170" x2="360" y2="270" />
+          <line class="edge dash" data-e="1-5" x1="220" y1="170" x2="80" y2="270" />
+          <line class="edge" data-e="1-2" x1="220" y1="170" x2="80" y2="70" />
+          <line class="edge" data-e="1-3" x1="220" y1="170" x2="360" y2="70" />
+          <line class="edge" data-e="2-3" x1="80" y1="70" x2="360" y2="70" />
+          <line class="edge" data-e="3-4" x1="360" y1="70" x2="360" y2="270" />
+          <line class="edge" data-e="4-5" x1="360" y1="270" x2="80" y2="270" />
+          <g class="node" data-n="1">
+            <circle cx="220" cy="170" r="30" /><text class="num" x="220" y="178" text-anchor="middle">1</text><text
+              class="lab" x="220" y="220" text-anchor="middle">Ketuhanan</text>
+          </g>
+          <g class="node" data-n="2">
+            <circle cx="80" cy="70" r="30" /><text class="num" x="80" y="78" text-anchor="middle">2</text><text
+              class="lab" x="80" y="28" text-anchor="middle">Kemanusiaan</text>
+          </g>
+          <g class="node" data-n="3">
+            <circle cx="360" cy="70" r="30" /><text class="num" x="360" y="78" text-anchor="middle">3</text><text
+              class="lab" x="360" y="28" text-anchor="middle">Persatuan</text>
+          </g>
+          <g class="node" data-n="4">
+            <circle cx="360" cy="270" r="30" /><text class="num" x="360" y="278" text-anchor="middle">4</text><text
+              class="lab" x="360" y="324" text-anchor="middle">Kerakyatan</text>
+          </g>
+          <g class="node" data-n="5">
+            <circle cx="80" cy="270" r="30" /><text class="num" x="80" y="278" text-anchor="middle">5</text><text
+              class="lab" x="80" y="324" text-anchor="middle">Keadilan Sosial</text>
+          </g>
+        </svg>
+        <div class="relbox" id="relbox" aria-live="polite"></div>
+      </div>
+      <div class="plain">
+        <h4>Aktivitas kelompok</h4>
+        <p>Isi tabel dengan 3–4 contoh sikap atau perilaku yang mencerminkan keterkaitan sila 1 dan 4, serta sila 2 dan
+          4, lalu kumpulkan semua temuan kelas menjadi satu infografik.</p>
+      </div>
+    </section>
+
+    <!-- KASUS -->
+    <section id="sec-kasus" class="stack" hidden>
+      <div class="page-head">
+        <span class="eyebrow">Studi kasus</span>
+        <h2>Lab Kasus: pembakaran warung di Sukoharjo</h2>
+        <p>Baca kasus yang diberitakan media, tentukan sila yang tersentuh, lalu rumuskan solusi berbasis Pancasila.</p>
+      </div>
+      <div class="grid2">
+        <div class="panel case">
+          <span class="chip">Kasus #1 · berita terkini</span>
+          <h3 style="font-size:21px;color:var(--ink)">Warung dibakar, pelaku diduga mantan napi terorisme</h3>
+          <p class="quote">Pada Oktober 2026, sebuah warung mie ayam babi di Sukoharjo, Jawa Tengah, dibakar. Menurut
+            pemberitaan Tribunnews yang diulas di video, polisi menetapkan dua tersangka dan menyebut pelakunya
+            berjumlah empat orang. Dua tersangka diduga membakar warung dan menahan korban yang sedang berjaga,
+            sedangkan dua pelaku lain masih diselidiki. Kapolda Jawa Tengah menyebut salah satu tersangka pernah menjadi
+            narapidana kasus terorisme. Perkara ini masih dalam proses hukum, sehingga para tersangka tetap dianggap
+            tidak bersalah sampai ada putusan pengadilan.</p>
+          <p class="quote">Catatan diskusi: perbuatan beberapa orang tidak boleh dilekatkan pada seluruh pemeluk agama,
+            kelompok, atau lembaga pendidikan mana pun.</p>
+          <div class="plain">
+            <h4>Pertanyaan pemantik</h4>
+            <ul class="t">
+              <li>Mengapa perbedaan keyakinan atau perbedaan pilihan usaha tidak boleh diselesaikan dengan kekerasan?
+              </li>
+              <li>Apa bedanya menyampaikan keberatan secara tertib dengan main hakim sendiri?</li>
+              <li>Mengapa kita perlu menunggu proses hukum dan tidak menghakimi tersangka atau kelompok tertentu?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 style="font-size:21px;color:var(--ink)">Langkah 1. Sila mana yang tersentuh?</h3>
+          <div class="checks" id="kchecks">
+            <label class="check"><input type="checkbox" value="1"><span><b>Sila 1</b> Ketuhanan Yang Maha
+                Esa</span></label>
+            <label class="check"><input type="checkbox" value="2"><span><b>Sila 2</b> Kemanusiaan yang adil dan
+                beradab</span></label>
+            <label class="check"><input type="checkbox" value="3"><span><b>Sila 3</b> Persatuan Indonesia</span></label>
+            <label class="check"><input type="checkbox" value="4"><span><b>Sila 4</b> Kerakyatan,
+                permusyawaratan</span></label>
+            <label class="check"><input type="checkbox" value="5"><span><b>Sila 5</b> Keadilan sosial</span></label>
+          </div>
+          <div class="btns"><button class="btn btn-red" id="kcheck">Periksa analisisku</button></div>
+          <div class="fb" id="kfb" aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="font-size:21px;color:var(--ink)">Langkah 2. Rancang tindakan nyata</h3>
+        <div class="grid2">
+          <label class="f" for="k-nama">Nama<input type="text" id="k-nama" placeholder="Nama dan kelas"></label>
+          <label class="f" for="k-solusi">Minimal dua ide solusi berbasis Pancasila<textarea id="k-solusi"
+              placeholder="Contoh: 1) Tidak menyebar ujaran kebencian dan kabar yang belum jelas. 2) Mengusulkan dialog lintas keyakinan di sekolah."></textarea></label>
+        </div>
+        <div class="btns"><button class="btn btn-line" id="kcopy">Salin jawabanku</button></div>
+        <p class="status" id="kstatus" aria-live="polite"></p>
+      </div>
+      <div class="panel">
+        <h3 style="font-size:21px;color:var(--ink)">Rubrik proyek akhir bab</h3>
+        <p>Kelompok memilih satu isu terkini, menganalisisnya dari sila-sila Pancasila, merumuskan minimal dua solusi,
+          lalu mempresentasikannya. Tiap aspek dinilai skor 1 sampai 4.</p>
+        <div class="scroll-x">
+          <table class="rubric">
+            <thead>
+              <tr>
+                <th>Aspek</th>
+                <th>Yang dinilai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Analisis isu</td>
+                <td>Kedalaman analisis dan ketepatan sila yang dikaitkan.</td>
+              </tr>
+              <tr>
+                <td>Perumusan solusi</td>
+                <td>Relevansi, kekonkretan, dan keberlanjutan ide.</td>
+              </tr>
+              <tr>
+                <td>Kreativitas penyajian</td>
+                <td>Daya tarik, kejelasan media, orisinalitas.</td>
+              </tr>
+              <tr>
+                <td>Komunikasi dan kolaborasi</td>
+                <td>Kejelasan penyampaian, menjawab pertanyaan, kekompakan, peran tiap anggota.</td>
+              </tr>
+              <tr>
+                <td>Penjiwaan nilai Pancasila</td>
+                <td>Kesungguhan dan refleksi pribadi yang tampak dari keseluruhan proyek.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- KUIS -->
+    <section id="sec-kuis" class="stack" hidden>
+      <div class="page-head">
+        <span class="eyebrow">Asesmen mandiri</span>
+        <h2>Kuis Bab 1</h2>
+        <p>Dua bagian: 12 soal pilihan ganda dengan umpan balik langsung, lalu 5 soal uraian yang kamu jawab sendiri dan
+          cocokkan dengan poin kunci.</p>
+      </div>
+      <div id="quiz" class="panel"></div>
+      <div id="uraian" class="panel" hidden></div>
+    </section>
+
+    <!-- REFLEKSI -->
+    <section id="sec-refleksi" class="stack" hidden>
+      <div class="page-head">
+        <span class="eyebrow">Umpan balik diri</span>
+        <h2>Lembar Refleksi</h2>
+        <p>Jawabanmu tersimpan di peramban ini saja. Setelah selesai, gulir ke bagian bawah untuk mengumpulkan tugas
+          kepada guru.</p>
+      </div>
+      <div class="panel">
+        <label class="f" for="r-nama">Nama dan kelas<input type="text" id="r-nama"
+            placeholder="Contoh: Aisyah, XI-2"></label>
+        <label class="f" for="r1">1. Dari proses belajar ini, saya memahami bahwa ...<textarea
+            id="r1"></textarea></label>
+        <label class="f" for="r2">2. Dari proses belajar ini, saya belum memahami tentang ...<textarea
+            id="r2"></textarea></label>
+        <label class="f" for="r3">3. Dari proses belajar ini, saya ingin mengetahui lebih dalam tentang ...<textarea
+            id="r3"></textarea></label>
+        <label class="f" for="r4">4. Hal yang akan saya lakukan dalam kehidupan sehari-hari adalah ...<textarea
+            id="r4"></textarea></label>
+        <div class="btns">
+          <button class="btn btn-red" id="rsave">Simpan</button>
+          <button class="btn btn-line" id="rcopy">Salin refleksi</button>
+          <button class="btn btn-line" id="rclear">Kosongkan</button>
+        </div>
+        <p class="status" id="rstatus" aria-live="polite"></p>
+      </div>
+      <div class="panel" id="kumpul">
+        <span class="eyebrow">Langkah terakhir</span>
+        <h3 style="font-size:21px;color:var(--ink)">Kumpulkan tugas ke guru</h3>
+        <ol class="t" style="padding-left:20px;display:grid;gap:6px">
+          <li>Selesaikan <a href="#kuis">kuis</a> sampai soal uraian, <a href="#kasus">Lab Kasus</a>, dan lembar
+            refleksi di atas.</li>
+          <li>Isi nama dan kelas di bawah ini.</li>
+          <li>Tekan <b>Salin rekap tugas</b>, lalu tempel pada tempat yang diminta gurumu (grup kelas, Google Classroom,
+            atau pesan pribadi), atau tekan <b>Kirim ke WhatsApp guru</b> untuk langsung membuka chat ke nomor guru.
+          </li>
+        </ol>
+        <label class="f" for="x-nama">Nama dan kelas<input type="text" id="x-nama"
+            placeholder="Contoh: Aisyah, XI-2"></label>
+        <div class="btns">
+          <button class="btn btn-red" id="xcopy">Salin rekap tugas</button>
+          <a class="btn btn-line" id="xwa" href="#" target="_blank" rel="noopener">Kirim ke WhatsApp guru</a>
+        </div>
+        <p class="status" id="xstatus" aria-live="polite"></p>
+        <div class="plain">
+          <h4>Catatan</h4>
+          <p>Web ini tidak mengirim jawaban otomatis. Jawabanmu hanya ada di peramban ini sampai kamu menyalin dan
+            mengirimkannya sendiri. Jangan menutup halaman sebelum rekap terkirim.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="in">
+      <b>GARUDA · Gerbang Ruang Digital Pendidikan Pancasila</b>
+      <span>Media pembelajaran Pendidikan Pancasila kelas XI, SMA Muhammadiyah 2 Surakarta.</span>
+      <span>Sumber materi: Buku Siswa Pendidikan Pancasila SMA/MA/SMK/MAK Kelas XI, Sri Cahyati, Siti Nurjanah, Ali
+        Usman, Kemendikbudristek 2023. Soal kuis disusun ulang untuk latihan. Lab Kasus merujuk pemberitaan Tribunnews
+        (video YouTube, 31 Oktober 2026); perkaranya masih dalam proses hukum dan rinciannya dapat berubah.</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var $ = function (s, r) { return (r || document).querySelector(s); };
+      var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+      /* ---------- router ---------- */
+      var routes = ['beranda', 'materi', 'level', 'keterkaitan', 'kasus', 'kuis', 'refleksi'];
+      function route() {
+        var h = (location.hash || '').replace('#', '');
+        if (routes.indexOf(h) < 0) h = 'beranda';
+        routes.forEach(function (r) { $('#sec-' + r).hidden = r !== h; });
+        $$('#nav a').forEach(function (a) {
+          if (a.getAttribute('data-r') === h) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+        });
+        window.scrollTo(0, 0);
+      }
+      window.addEventListener('hashchange', route);
+      route();
+
+      /* ---------- materi tabs ---------- */
+      $('#mtabs').addEventListener('click', function (e) {
+        var b = e.target.closest('.tab'); if (!b) return;
+        var k = b.getAttribute('data-m');
+        $$('#mtabs .tab').forEach(function (t) { t.setAttribute('aria-selected', t === b ? 'true' : 'false'); });
+        ['sila', 'tindakan', 'ideologi', 'negara', 'meja'].forEach(function (m) { $('#m-' + m).hidden = m !== k; });
+      });
+
+      /* ---------- keterkaitan ---------- */
+      var rels = {
+        '1-2': ['Sila 1 dan sila 2', 'Pancasila menghendaki kita meyakini dan menjalankan ajaran agama, lalu mengamalkannya sebagai kasih sayang kepada sesama manusia. Sebaliknya, kasih sayang kepada sesama sebagaimana diajarkan sila kedua harus berlandaskan keimanan kepada Tuhan Yang Maha Esa.'],
+        '1-3': ['Sila 1 dan sila 3', 'Keimanan diwujudkan dalam cinta tanah air dan bangsa: menjaga kelestarian alam dan merawat persatuan di tengah keberagaman suku, agama, bahasa, dan budaya. Ajaran ketuhanan di semua agama dan kepercayaan di Indonesia dilihat sebagai ajaran yang memupuk cinta tanah air.'],
+        '2-3': ['Sila 2 dan sila 3', 'Menurut Sukarno dalam pidato 1 Juni 1945, Pancasila menghendaki keseimbangan antara menjadi bagian umat manusia dan menjadi bagian bangsa Indonesia. Identitas kebangsaan adalah bagian dari identitas kemanusiaan universal. Bangsa Indonesia tidak menganggap dirinya lebih tinggi dari bangsa lain.'],
+        '3-4': ['Sila 3 dan sila 4', 'Kebangsaan harus mengandung nilai demokrasi dan kedaulatan rakyat. Tindakan atas nama bangsa tidak boleh bertentangan dengan hak asasi manusia. Semua warga setara dan sama-sama berperan memajukan negara, sebab negara ini "semua buat semua".'],
+        '4-5': ['Sila 4 dan sila 5', 'Demokrasi tidak hanya soal politik seperti memilih dalam pemilu atau menyuarakan aspirasi. Demokrasi juga harus mengikutsertakan kesetaraan sosial-ekonomi sehingga rakyat sejahtera. Kebebasan dan kedaulatan rakyat perlu disertai pembangunan menuju keadilan sosial.'],
+        '1-4': ['Sila 1 dan sila 4', 'Garis putus-putus. Buku tidak membahasnya sendiri, tetapi Hatta menyatakan sila pertama menjiwai semua sila. Demokrasi Indonesia ditopang sila ketuhanan, kemanusiaan, persatuan, dan keadilan sosial. Coba temukan contohnya pada Aktivitas 1.2.'],
+        '1-5': ['Sila 1 dan sila 5', 'Garis putus-putus. Soal Uji Kompetensi meminta kamu menjelaskan hubungan ini. Petunjuk: Hatta menyebut pengamalan sila 2 sampai 5 sebagai bentuk keimanan dan ketakwaan kepada Tuhan Yang Maha Esa.']
+      };
+      var order = ['1-2', '1-3', '2-3', '3-4', '4-5'];
+      function showRel(k) {
+        var r = rels[k];
+        $('#relbox').innerHTML = '<span class="eyebrow">Keterkaitan</span><h4></h4><p></p>';
+        $('#relbox h4').textContent = r[0]; $('#relbox p').textContent = r[1];
+        var ends = k.split('-');
+        $$('.map .edge').forEach(function (l) { l.classList.toggle('on', l.getAttribute('data-e') === k); });
+        $$('.map .node').forEach(function (n) { n.classList.toggle('on', ends.indexOf(n.getAttribute('data-n')) >= 0); });
+        $$('#relbar .tab').forEach(function (t) { t.setAttribute('aria-selected', t.getAttribute('data-e') === k ? 'true' : 'false'); });
+      }
+      $('#relbar').addEventListener('click', function (e) { var b = e.target.closest('.tab'); if (b) showRel(b.getAttribute('data-e')); });
+      showRel('1-2');
+
+      /* ---------- kasus ---------- */
+      var kfb = {
+        1: ['Sila 1', 'Tepat. Pasal 29 UUD 1945 menjamin kemerdekaan tiap penduduk memeluk agamanya dan beribadat menurut keyakinannya. Apa pun motifnya, yang masih diselidiki polisi, kekerasan tidak sejalan dengan nilai ketuhanan yang menghormati sesama.', true],
+        2: ['Sila 2', 'Tepat. Membakar warung dan menahan penjaganya membahayakan keselamatan dan merendahkan martabat korban sebagai manusia.', true],
+        3: ['Sila 3', 'Tepat. Kekerasan di tengah masyarakat yang beragam merusak kerukunan dan rasa aman bersama, padahal persatuan dibutuhkan untuk cita-cita bersama.', true],
+        4: ['Sila 4', 'Tepat. Perbedaan pendapat diselesaikan lewat musyawarah dan jalur hukum, bukan main hakim sendiri. Menunggu putusan pengadilan juga berarti menghormati asas praduga tak bersalah.', true],
+        5: ['Sila 5', 'Tepat. Pemilik usaha berhak atas rasa aman dan keadilan, termasuk pemulihan kerugian. Penegakan hukum yang adil dan terbuka melindungi semua warga tanpa pandang bulu.', true]
+      };
+
+      $('#kcheck').addEventListener('click', function () {
+        var picked = $$('#kchecks input:checked').map(function (i) { return i.value; });
+        var out = $('#kfb'); out.innerHTML = '';
+        if (!picked.length) { out.innerHTML = '<div>Pilih minimal satu sila lebih dulu.</div>'; return; }
+        for (var i = 1; i <= 5; i++) {
+          var d = document.createElement('div');
+          var on = picked.indexOf(String(i)) >= 0;
+          d.className = on ? 'y' : 'm';
+          d.textContent = on ? kfb[i][0] + ': ' + kfb[i][1] : kfb[i][0] + ' belum kamu pilih. ' + kfb[i][1].replace(/^Tepat\. /, 'Kasus ini juga menyentuhnya. ');
+          out.appendChild(d);
+        }
+        var n = document.createElement('div');
+        n.textContent = 'Kesimpulan: kelima sila tersentuh sekaligus. Itulah arti keterkaitan antarsila: melanggar satu sila biasanya menggoyahkan yang lain.';
+        out.appendChild(n);
+      });
+      function copyText(text, statusEl, okMsg) {
+        var fallback = function () {
+          var ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select();
+          var ok = false; try { ok = document.execCommand('copy'); } catch (x) { }
+          document.body.removeChild(ta);
+          statusEl.textContent = ok ? okMsg : 'Salin otomatis tidak tersedia. Blok dan salin teks dari kolom jawaban.';
+        };
+        try {
+          navigator.clipboard.writeText(text).then(function () { statusEl.textContent = okMsg; }, fallback);
+        } catch (e) { fallback(); }
+      }
+      $('#kcopy').addEventListener('click', function () {
+        var t = 'Analisis Kasus Bab 1 Menjiwai Pancasila\nNama: ' + $('#k-nama').value + '\nSolusi:\n' + $('#k-solusi').value;
+        copyText(t, $('#kstatus'), 'Jawaban tersalin. Tempel ke pesan untuk gurumu.');
+      });
+
+      /* ---------- kuis ---------- */
+      var L = ['A', 'B', 'C', 'D'];
+      var lastScore = null;
+      var mc = [
+        { q: 'Menurut Mohammad Hatta, sila yang memimpin atau menjiwai sila-sila lainnya adalah ...', o: ['Persatuan Indonesia', 'Ketuhanan Yang Maha Esa', 'Kemanusiaan yang adil dan beradab', 'Keadilan sosial'], a: 1, e: 'Hatta menyatakan sila pertama menjiwai seluruh sila lainnya, sehingga pengamalan sila 2 sampai 5 juga menjadi wujud keimanan.' },
+        { q: 'Pelafalan sila-sila Pancasila yang baku diatur dalam ...', o: ['Dekrit Presiden 5 Juli 1959', 'Instruksi Presiden Nomor 12 Tahun 1968', 'Pasal 29 UUD 1945', 'Pidato 1 Juni 1945'], a: 1, e: 'Instruksi Presiden Nomor 12 Tahun 1968 memuat lafal kelima sila secara berurutan.' },
+        { q: 'Hubungan sila kedua dan sila ketiga menurut Sukarno menunjukkan bahwa ...', o: ['bangsa Indonesia lebih tinggi dari bangsa lain', 'identitas kebangsaan adalah bagian dari identitas kemanusiaan universal', 'kemanusiaan hanya berlaku di dalam negeri', 'persatuan lebih penting dari kemanusiaan'], a: 1, e: 'Pancasila menghendaki keseimbangan: menjadi bagian bangsa Indonesia sekaligus bagian umat manusia.' },
+        { q: 'Pernyataan Sukarno bahwa negara Indonesia adalah negara "semua buat semua" paling terkait dengan hubungan sila ...', o: ['1 dan 2', '2 dan 5', '3 dan 4', '1 dan 5'], a: 2, e: 'Hubungan sila persatuan dan kerakyatan menegaskan semua warga setara dan sama-sama berperan memajukan negara.' },
+        { q: 'Hubungan sila keempat dan kelima menekankan bahwa demokrasi ...', o: ['cukup diwujudkan melalui pemilu', 'hanya soal kebebasan berpendapat di ruang publik', 'juga harus menghadirkan kesetaraan sosial-ekonomi dan kesejahteraan', 'tidak berkaitan dengan pembangunan'], a: 2, e: 'Kedaulatan rakyat perlu disertai pembangunan menuju keadilan sosial.' },
+        { q: 'Indonesia disebut sebagai negara yang berketuhanan. Pernyataan yang tepat adalah ...', o: ['Indonesia negara agama', 'Indonesia negara sekuler', 'Indonesia bukan negara agama dan bukan negara sekuler', 'Negara tidak menjamin kebebasan beribadah'], a: 2, e: 'Nilai ketuhanan menjadi roh kehidupan bernegara, dan Pasal 29 menjamin kebebasan beribadah menurut agama dan kepercayaan masing-masing.' },
+        { q: 'Tiga unsur esensial ideologi menurut Koento Wibisono adalah ...', o: ['keyakinan, mitos, loyalitas', 'wilayah, rakyat, pemerintah', 'akuntabilitas, rotasi, pemilu', 'tujuan, strategi, kekuasaan'], a: 0, e: 'Setiap ideologi memuat keyakinan, mitos, dan tuntutan loyalitas dari pendukungnya.' },
+        { q: 'Pancasila berkedudukan sebagai ideologi negara terutama karena ...', o: ['dipilih oleh pemerintah asing', 'merupakan kepribadian bangsa Indonesia', 'lebih mudah dihafal', 'hanya cocok untuk satu golongan'], a: 1, e: 'Nilai-nilai Pancasila sudah tercermin dalam budaya, ekonomi, kehidupan sosial, dan spiritualitas masyarakat Nusantara.' },
+        { q: 'Pancasila sebagai meja statis berarti ...', o: ['Pancasila tidak boleh dikaji ulang', 'Pancasila titik temu yang mempersatukan keragaman bangsa dan mendasari norma negara', 'Pancasila hanya dipakai saat upacara', 'Pancasila selalu berubah mengikuti zaman'], a: 1, e: 'Meja statis adalah dasar bersama yang menyatukan keragaman, bersumber dari jati diri masyarakat.' },
+        { q: 'Leitstar dinamis dapat diartikan sebagai ...', o: ['aturan kaku yang tidak boleh disesuaikan', 'bintang penuntun yang membuat bangsa adaptif tanpa meninggalkan prinsip dasar', 'lambang negara', 'nama lain meja statis'], a: 1, e: 'Leitstern berarti bintang penuntun. Pancasila luwes menjawab tantangan zaman namun tetap pada prinsip dan cita-citanya.' },
+        { q: 'Visi pembangunan yang menandai seabad Indonesia merdeka adalah ...', o: ['Indonesia Emas 1945', 'Indonesia 2045: Berdaulat, Maju, Adil, dan Makmur', 'Indonesia 2085: Negara Serikat', 'Indonesia 2025: Swasembada'], a: 1, e: 'Visi tersebut ditetapkan Bappenas, sedangkan "Impian Indonesia" memproyeksikan kondisi tahun 2085.' },
+        { q: 'Sikap yang paling mencerminkan keterkaitan sila 1 dan sila 2 adalah ...', o: ['rajin beribadah tetapi acuh pada sesama', 'beribadah dan mengamalkannya dengan kasih sayang kepada sesama', 'membantu orang hanya jika sama keyakinan', 'menghindari bergaul dengan yang berbeda'], a: 1, e: 'Keimanan tidak berhenti pada ibadah, melainkan diwujudkan sebagai kasih sayang kepada sesama makhluk Tuhan.' }
+      ];
+      var urai = [
+        { q: 'Berikan argumentasi bahwa sila-sila dalam Pancasila saling terkait.', k: 'Kelimanya satu kesatuan yang bulat. Jika satu sila dihilangkan, hilang makna kesatuannya. Tidak ada sila yang lebih penting dari yang lain. Sertakan contoh: sila 1 menjiwai 2 sampai 5.' },
+        { q: 'Jelaskan bentuk keterkaitan antara sila pertama dan sila kelima.', k: 'Keadilan sosial adalah wujud pengamalan nilai ketuhanan (berbuat adil, berbagi, peduli). Sebaliknya, upaya mewujudkan keadilan sosial dijiwai keimanan dan tanggung jawab kepada Tuhan. Beri contoh perilaku nyata.' },
+        { q: 'Jelaskan dan berikan contoh perilaku yang menunjukkan pengamalan Pancasila dalam kehidupan sehari-hari.', k: 'Pilih beberapa sila dan beri contoh di pribadi, keluarga, sekolah, masyarakat. Misalnya musyawarah kelas (sila 4), tidak merundung (sila 2), gotong royong (sila 3).' },
+        { q: 'Mengapa Pancasila berkedudukan sebagai ideologi Negara Republik Indonesia?', k: 'Pancasila adalah kepribadian bangsa, sudah tercermin dalam budaya dan kehidupan Nusantara, serta menuntun tujuan negara: masyarakat adil dan makmur. Ideologi lain berarti mengingkari kepribadian dan tujuan negara.' },
+        { q: 'Jelaskan apa yang dimaksud dengan Pancasila sebagai leitstar dinamis.', k: 'Leitstar berarti bintang penuntun. Pancasila memberi cita-cita dan mengarahkan bangsa merespons tantangan zaman secara luwes tanpa meninggalkan prinsip dasar dan tujuan.' }
+      ];
+      var qi = 0, ans = [], locked = false;
+      var box = $('#quiz');
+      function startQuiz() { qi = 0; ans = []; locked = false; $('#uraian').hidden = true; renderQ(); }
+      function renderQ() {
+        var it = mc[qi]; locked = ans[qi] != null;
+        box.innerHTML = '<div class="q-head"><span>Soal ' + (qi + 1) + ' / ' + mc.length + '</span><span>Pilihan ganda</span></div>' +
+          '<div class="bar"><i style="width:' + (qi / mc.length * 100) + '%"></i></div><h3 class="qtext"></h3><div class="opts"></div><div class="explain" hidden></div>' +
+          '<div class="btns"><button class="btn btn-line" id="qprev">Sebelumnya</button><button class="btn btn-red" id="qnext" disabled>Berikutnya</button></div>';
+        $('.qtext', box).textContent = it.q;
+        var wrap = $('.opts', box);
+        it.o.forEach(function (t, i) {
+          var b = document.createElement('button'); b.className = 'opt'; b.type = 'button';
+          b.innerHTML = '<span class="l">' + L[i] + '</span><span></span>'; b.lastChild.textContent = t;
+          b.addEventListener('click', function () { if (locked) return; ans[qi] = i; locked = true; mark(); });
+          wrap.appendChild(b);
+        });
+        $('#qprev').disabled = qi === 0;
+        $('#qprev').addEventListener('click', function () { qi--; renderQ(); });
+        $('#qnext').textContent = qi === mc.length - 1 ? 'Lihat hasil' : 'Berikutnya';
+        $('#qnext').addEventListener('click', function () { if (qi === mc.length - 1) result(); else { qi++; renderQ(); } });
+        if (locked) mark();
+      }
+      function mark() {
+        var it = mc[qi];
+        $$('.opt', box).forEach(function (b, i) {
+          b.disabled = true;
+          if (i === it.a) b.classList.add('correct'); else if (i === ans[qi]) b.classList.add('wrong');
+        });
+        var ex = $('.explain', box); ex.hidden = false;
+        ex.textContent = (ans[qi] === it.a ? 'Benar. ' : 'Belum tepat. Jawaban: ' + L[it.a] + '. ') + it.e;
+        $('#qnext').disabled = false;
+      }
+      function result() {
+        var s = 0; mc.forEach(function (m, i) { if (ans[i] === m.a) s++; });
+        var pct = Math.round(s / mc.length * 100);
+        var tier = pct >= 80 ? 'Warga Negara Teladan' : pct >= 60 ? 'Warga Negara Aktif' : 'Perlu Pendalaman';
+        box.innerHTML = '<div class="score"><div><small>Skor pilihan ganda</small><div class="big">' + s + '<span style="font-size:22px"> / ' + mc.length + '</span></div></div><div class="tier">' + tier + '<small>' + pct + '% benar</small></div></div>' +
+          '<h3 style="font-size:19px">Tinjauan jawaban</h3><div id="rv" style="display:grid;gap:8px"></div>' +
+          '<div class="btns"><button class="btn btn-red" id="toU">Lanjut ke soal uraian</button><button class="btn btn-line" id="again">Ulangi kuis</button></div>' +
+          '<div class="plain"><h4>Setelah ini</h4><ol class="t" style="padding-left:20px;display:grid;gap:4px"><li>Kerjakan soal uraian di bawah, lalu cocokkan dengan poin kunci.</li><li>Selesaikan <a href="#kasus">Lab Kasus</a>.</li><li>Isi <a href="#refleksi">Lembar Refleksi</a>, lalu kumpulkan tugas ke guru di bagian bawah halaman itu.</li></ol></div>';
+        lastScore = { s: s, n: mc.length, pct: pct, tier: tier };
+        var rv = $('#rv');
+        mc.forEach(function (m, i) {
+          var ok = ans[i] === m.a;
+          var d = document.createElement('details'); d.className = 'rv';
+          var sm = document.createElement('summary'); sm.innerHTML = '<span class="' + (ok ? 'good' : 'badt') + '">' + (ok ? '✓' : '✕') + '</span> '; sm.appendChild(document.createTextNode('Soal ' + (i + 1) + '. ' + m.q));
+          var inn = document.createElement('div'); inn.className = 'in';
+          inn.innerHTML = '<div></div><div></div><div></div>';
+          inn.children[0].textContent = 'Jawabanmu: ' + (ans[i] == null ? 'tidak dijawab' : L[ans[i]] + '. ' + m.o[ans[i]]);
+          inn.children[1].textContent = 'Kunci: ' + L[m.a] + '. ' + m.o[m.a];
+          inn.children[2].textContent = m.e;
+          d.appendChild(sm); d.appendChild(inn); rv.appendChild(d);
+        });
+        $('#again').addEventListener('click', startQuiz);
+        $('#toU').addEventListener('click', function () { buildU(); $('#uraian').hidden = false; $('#uraian').scrollIntoView({ behavior: 'smooth' }); });
+      }
+      function buildU() {
+        var u = $('#uraian'); u.innerHTML = '<h3 style="font-size:22px;color:var(--ink)">Soal uraian</h3><p>Tulis jawabanmu lebih dulu, baru buka poin kunci untuk mencocokkan.</p>';
+        urai.forEach(function (it, i) {
+          var w = document.createElement('div'); w.className = 'plain'; w.style.display = 'grid'; w.style.gap = '8px';
+          w.innerHTML = '<h4></h4><textarea id="u' + i + '" aria-label="Jawaban uraian ' + (i + 1) + '"></textarea><div><button class="btn btn-line" type="button">Lihat poin kunci</button></div><div class="key" hidden></div>';
+          $('h4', w).textContent = (i + 1) + '. ' + it.q;
+          $('.key', w).textContent = 'Poin kunci: ' + it.k;
+          $('button', w).addEventListener('click', function () { var k = $('.key', w); k.hidden = !k.hidden; });
+          u.appendChild(w);
+        });
+      }
+      startQuiz();
+
+      /* ---------- cek level (TaRL) ---------- */
+      var dq = [
+        { q: 'Pancasila terdiri atas berapa sila?', o: ['Tiga', 'Lima', 'Tujuh', 'Sembilan'], a: 1 },
+        { q: 'Bunyi sila pertama Pancasila adalah ...', o: ['Persatuan Indonesia', 'Kemanusiaan yang adil dan beradab', 'Ketuhanan Yang Maha Esa', 'Keadilan sosial bagi seluruh rakyat Indonesia'], a: 2 },
+        { q: 'Menolong teman tanpa membedakan agama, suku, dan golongan paling dekat dengan sila ...', o: ['Pertama', 'Kedua', 'Keempat', 'Kelima'], a: 1 },
+        { q: 'Menurut Hatta, hubungan sila pertama dengan sila lainnya adalah ...', o: ['berdiri sendiri', 'sila pertama menjiwai sila-sila lainnya', 'sila kelima paling penting', 'tidak saling terkait'], a: 1 },
+        { q: 'Siswa menyebar tuduhan tanpa bukti di grup kelas lalu berkata, "Ini kebebasan berpendapat." Tanggapan yang paling tepat adalah ...', o: ['Benar, pendapat tidak boleh dibatasi sama sekali', 'Kebebasan berpendapat perlu disertai tanggung jawab dan penghormatan pada hak orang lain', 'Itu urusan pribadi, tidak terkait Pancasila', 'Cukup dibiarkan sampai reda sendiri'], a: 1 },
+        { q: 'Pancasila sebagai leitstar dinamis berarti ...', o: ['aturan yang tidak boleh disesuaikan', 'bintang penuntun yang adaptif tanpa meninggalkan prinsip dasar', 'sekadar simbol upacara', 'ideologi yang bisa diganti sesuai zaman'], a: 1 }
+      ];
+      var dform = $('#dq');
+      dq.forEach(function (it, i) {
+        var f = document.createElement('fieldset');
+        var lg = document.createElement('legend'); lg.textContent = (i + 1) + '. ' + it.q; f.appendChild(lg);
+        it.o.forEach(function (t, j) {
+          var lb = document.createElement('label');
+          var inp = document.createElement('input'); inp.type = 'radio'; inp.name = 'd' + i; inp.value = j; inp.id = 'd' + i + '_' + j;
+          var sp = document.createElement('span'); sp.textContent = t;
+          lb.appendChild(inp); lb.appendChild(sp); f.appendChild(lb);
+        });
+        dform.appendChild(f);
+      });
+      function setLevel(n) {
+        $$('#lvls .lvl').forEach(function (c) { c.classList.toggle('mine', String(n) === c.getAttribute('data-l')); });
+      }
+      $('#dgo').addEventListener('click', function () {
+        var st = $('#dstatus'), s = 0, done = 0;
+        dq.forEach(function (it, i) {
+          var c = $('input[name="d' + i + '"]:checked'); if (c) { done++; if (Number(c.value) === it.a) s++; }
+        });
+        if (done < dq.length) { st.textContent = 'Jawab dulu semua soal (' + done + ' dari ' + dq.length + ' terjawab).'; return; }
+        var lv = s <= 2 ? 1 : s <= 4 ? 2 : 3;
+        var names = { 1: 'Level 1 Mengenal', 2: 'Level 2 Menghubungkan', 3: 'Level 3 Menganalisis dan merumuskan' };
+        st.textContent = 'Skor cek ' + s + ' dari ' + dq.length + '. Jalur belajarmu: ' + names[lv] + '. Lihat kartu yang bertanda di bawah.';
+        setLevel(lv);
+        $('#lvls').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+      $('#dreset').addEventListener('click', function () {
+        $$('#dq input').forEach(function (i) { i.checked = false; });
+        $('#dstatus').textContent = ''; setLevel(0);
+      });
+
+      /* ---------- refleksi ---------- */
+      var KEY = 'garuda-b1-refleksi', ids = ['r-nama', 'r1', 'r2', 'r3', 'r4'];
+      function load() { try { var d = JSON.parse(localStorage.getItem(KEY) || '{}'); ids.forEach(function (i) { if (d[i]) $('#' + i).value = d[i]; }); } catch (e) { } }
+      function collect() { var d = {}; ids.forEach(function (i) { d[i] = $('#' + i).value; }); return d; }
+      $('#rsave').addEventListener('click', function () {
+        var st = $('#rstatus');
+        try { localStorage.setItem(KEY, JSON.stringify(collect())); st.textContent = 'Tersimpan di peramban ini.'; }
+        catch (e) { st.textContent = 'Penyimpanan di peramban tidak tersedia. Gunakan Salin refleksi.'; }
+      });
+      $('#rclear').addEventListener('click', function () {
+        ids.forEach(function (i) { $('#' + i).value = ''; });
+        try { localStorage.removeItem(KEY); } catch (e) { }
+        $('#rstatus').textContent = 'Lembar dikosongkan.';
+      });
+      $('#rcopy').addEventListener('click', function () {
+        var d = collect();
+        var t = 'Refleksi Bab 1 Menjiwai Pancasila\nNama: ' + d['r-nama'] + '\n1. Saya memahami bahwa: ' + d.r1 + '\n2. Belum saya pahami: ' + d.r2 + '\n3. Ingin saya ketahui lebih dalam: ' + d.r3 + '\n4. Yang akan saya lakukan: ' + d.r4;
+        copyText(t, $('#rstatus'), 'Refleksi tersalin.');
+      });
+      function rekap() {
+        var d = collect(), t = 'REKAP TUGAS BAB 1 MENJIWAI PANCASILA\nNama dan kelas: ' + ($('#x-nama').value || d['r-nama'] || '(belum diisi)') + '\n\n';
+        t += '1. KUIS PILIHAN GANDA\n' + (lastScore ? 'Skor: ' + lastScore.s + ' / ' + lastScore.n + ' (' + lastScore.pct + '% benar, ' + lastScore.tier + ')' : '(belum dikerjakan)') + '\n\n';
+        t += '2. JAWABAN URAIAN\n';
+        for (var i = 0; i < 5; i++) { var e = document.getElementById('u' + i); t += (i + 1) + '. ' + ((e && e.value) || '(belum diisi)') + '\n'; }
+        t += '\n3. LAB KASUS\nSolusi: ' + ($('#k-solusi').value || '(belum diisi)') + '\n\n';
+        t += '4. REFLEKSI\nSaya memahami bahwa: ' + (d.r1 || '-') + '\nBelum saya pahami: ' + (d.r2 || '-') + '\nIngin saya ketahui lebih dalam: ' + (d.r3 || '-') + '\nYang akan saya lakukan: ' + (d.r4 || '-');
+        return t;
+      }
+      $('#xcopy').addEventListener('click', function () { copyText(rekap(), $('#xstatus'), 'Rekap tersalin. Tempel dan kirim ke gurumu.'); });
+      $('#xwa').addEventListener('click', function () { this.href = 'https://wa.me/6285336878315?text=' + encodeURIComponent(rekap()); });
+      load();
+    })();
+  </script>
+
+</body>
+
+</html>
